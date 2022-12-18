@@ -1,0 +1,94 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    color: #fff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "conteudo informacao"
+                         "conteudo social";
+    background: url('../images/bg-desktop.svg');
+    background-size: cover;
+    margin: 40px auto;
+    background-color: var(--primary-medium);
+    height: 460px;
+    max-width: 830px;
+
+}
+
+.container .conteudo-titulo {
+    grid-area: conteudo;
+}
+
+.container .conteudo-titulo .logo {
+    height: 30px;
+    margin: 31px 39px;
+}
+
+.container .conteudo-titulo .ilustracoes {
+    height: 290px;
+    align-self: center;
+    margin: 15px 0 0 40px;
+}
+
+.container .informacao {
+    grid-area: informacao;
+    margin: 135px 0px 0px 30px;
+}
+
+.container .informacao .introducao {
+    font-size: 2.3rem;
+    width: 255px;
+}
+
+.container .informacao p {
+    width: 310px;
+    margin: 14px 0px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.container .informacao a {
+    padding: 10px 38px;
+    background-color: #fff;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.container .informacao a:hover {
+    background-color: var(--primary-soft);
+    color: #fff;
+}
+
+.container .socials {
+    grid-area: social;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 15px 35px;
+}
+
+.container .socials a {
+    margin: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 5px 7px;
+    color: #fff;
+}
+
+.container .socials a:first-child {
+    padding: 5px 9px;
+    transition: 0.3s;
+}
+
+.container .socials a:hover {
+    border-color: var(--primary-soft);
+    color: var(--primary-soft);
+}

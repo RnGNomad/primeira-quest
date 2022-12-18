@@ -1,0 +1,63 @@
+@media (max-width: 860px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "conteudo"
+                             "informacao"
+                             "social";
+        width: 500px;
+        height: 1075px;
+        margin: auto;
+        background: url('../images/bg-mobile.svg');
+        background-color: var(--primary-medium);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .container .conteudo-titulo .logo {
+        height: 43px;
+        margin: 45px 45px 0;
+    }
+    .container .conteudo-titulo .ilustracoes {
+        margin: 70px 0 0 50px;
+    }
+
+    .container .informacao {
+        margin:  79px 0 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container .informacao .introducao{
+        font-size: 3.1rem;
+        width: 370px;
+        text-align: center;
+    }
+    .container .informacao p {
+        font-size: 19px;
+        line-height: 32px;
+        margin-top: 22px;
+        width: 360px;
+        text-align: center;
+    }
+    .container .informacao a {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 20px;
+        width: 270px;
+        height: 50px;
+    }
+    
+    .container .socials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .socials a{
+        margin-top: 40px;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        line-height: 25px;
+        font-size: 20px;
+    }
+}
